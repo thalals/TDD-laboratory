@@ -16,7 +16,7 @@ public class Calculator {
             throw new RuntimeException();
         }
         if (Integer.parseInt(number) < 0) {
-            throw new RuntimeException();
+            throw new RuntimeException(number + " : 음수가 들어와서는 안됩니다.");
         }
     }
 }

@@ -7,12 +7,12 @@ public class Input {
     private static final String DEFAULT_SEPARATOR = ",|:";
     private static final Pattern PATTERN = Pattern.compile("//(.)\n(.*)");
 
-    public boolean emptyValidate(final String text) {
+    public boolean isEmpty(final String text) {
         if (Objects.isNull(text)) {
             return false;
         }
 
-        return !text.isEmpty();
+        return !text.isBlank();
     }
 
     public String[] extractStringArray(final String text) {

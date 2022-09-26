@@ -14,7 +14,7 @@ public class InputTest {
         String input1 = "";
         Input input = new Input();
 
-        assertThat(input.emptyValidate(input1)).isFalse();
+        assertThat(input.isEmpty(input1)).isFalse();
     }
 
     @Test
@@ -24,7 +24,7 @@ public class InputTest {
         String input1 = null;
         Input input = new Input();
 
-        assertThat(input.emptyValidate(input1)).isFalse();
+        assertThat(input.isEmpty(input1)).isFalse();
     }
 
     @Test

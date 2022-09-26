@@ -19,7 +19,7 @@ public class Run {
     }
 
     public static void run(final String text) {
-        if (!input.emptyValidate(text)) {
+        if (!input.isEmpty(text)) {
             System.out.println("1");
             return;
         }
