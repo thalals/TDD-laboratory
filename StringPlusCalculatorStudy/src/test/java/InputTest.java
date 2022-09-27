@@ -3,6 +3,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 public class InputTest {
@@ -24,6 +25,14 @@ public class InputTest {
         String input1 = null;
         Input input = new Input();
 
+        assertThat(input.isEmpty(input1)).isFalse();
+    }
+
+    @ParameterizedTest
+    @NullAndEmptySource
+    @DisplayName("들어온 값이 null 이거나 빈 값일 경우")
+    void preBlankCheck(String input1) {
+        Input input = new Input();
         assertThat(input.isEmpty(input1)).isFalse();
     }
 
