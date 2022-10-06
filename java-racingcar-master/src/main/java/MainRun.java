@@ -1,6 +1,8 @@
+import domain.GameSet;
 import java.util.Scanner;
+import ui.InputView;
 
-public class GameRun {
+public class MainRun {
 
     public static void main(String[] args) {
         InputView inputView = new InputView();

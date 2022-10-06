@@ -1,3 +1,5 @@
+package ui;
+
 public class InputView {
 
     public void printCarsAsking() {

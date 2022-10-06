@@ -1,12 +1,15 @@
+package domain;
+
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class GameSet {
 
     private final int count;
     private final List<Car> carList;
 
-    GameSet(final int cars, final int count) {
+    public GameSet(final int cars, final int count) {
         this.count = count;
         carList = List.copyOf(createCars(cars));
     }
