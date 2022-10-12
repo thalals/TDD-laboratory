@@ -11,6 +11,12 @@ repositories {
 dependencies {
     testImplementation 'org.assertj:assertj-core:3.22.0'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+// https://mvnrepository.com/artifact/org.mockito/mockito-junit-jupiter
+    testImplementation 'org.mockito:mockito-junit-jupiter:4.8.0'
+    testImplementation 'org.mockito:mockito-core:4.6.1'
+    // https://mvnrepository.com/artifact/org.powermock/powermock-api-mockito
+    testImplementation 'org.powermock:powermock-api-mockito:1.7.4'
+
 }
 
 java {
