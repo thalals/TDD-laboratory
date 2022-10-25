@@ -8,6 +8,7 @@ import java.util.OptionalInt;
 import java.util.stream.Collectors;
 
 
+
 public class GameSet {
 
     private final int count;
@@ -52,4 +53,5 @@ public class GameSet {
             .filter(car -> car.isEqualsDistance(maxDistance.getAsInt()))
             .map(Car::getName).collect(Collectors.toList());
     }
+
 }

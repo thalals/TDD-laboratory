@@ -7,6 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+
 import org.mockito.BDDMockito;
 
 public class CarTest {
@@ -21,6 +22,7 @@ public class CarTest {
 
         //when
         Car car = new Car(0, "name");
+
         car.move(carMoveAbleStrategy);
 
         //then
@@ -33,4 +35,5 @@ public class CarTest {
     void validName(String name) {
         assertThatThrownBy(() -> new Car(0, name)).isInstanceOf(NullPointerException.class);
     }
+
 }

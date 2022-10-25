@@ -13,6 +13,7 @@ public class ResultView {
     }
     private static void printCarDistance(final Car car) {
         System.out.print(car.getName() + " : ");
+
         for (int i = 0; i < car.getDistance(); i++) {
             System.out.print("-");
         }
@@ -25,4 +26,5 @@ public class ResultView {
         }
         System.out.println("가 최종 우승했습니다.");
     }
+
 }

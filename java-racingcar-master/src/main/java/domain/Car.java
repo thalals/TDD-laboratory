@@ -19,6 +19,7 @@ public class Car {
             throw new NullPointerException("자동차 이름은 5를 초과해서는 안됩니다.");
         }
     }
+
     public void move(final MoveAbleStrategy moveAbleStrategy) {
         distance = distance + moveAbleStrategy.getMoveDistance();
     }
@@ -26,7 +27,7 @@ public class Car {
     public int getDistance() {
         return this.distance;
     }
-
+  
     public String getName() {
         return this.name;
     }
