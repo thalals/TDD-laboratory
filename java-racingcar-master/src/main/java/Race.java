@@ -11,6 +11,7 @@ public class Race {
             runGameRound(gameSet.getCarList());
             ResultView.result(gameSet.getCarList());
         }
+        ResultView.winnerPrint(gameSet.getWinners());
     }
 
     public static void runGameRound(final List<Car> carList) {

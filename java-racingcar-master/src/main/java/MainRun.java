@@ -9,7 +9,7 @@ public class MainRun {
         Scanner scanner = new Scanner(System.in);
 
         inputView.printCarsAsking();
-        int numberOfCars = scanner.nextInt();
+        String numberOfCars = scanner.nextLine();
 
         inputView.printCountAsking();
         int racingRound = scanner.nextInt();

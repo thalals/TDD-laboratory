@@ -12,9 +12,19 @@ public class ResultView {
         System.out.println();
     }
     private static void printCarDistance(final Car car) {
+        System.out.print(car.getName() + " : ");
+
         for (int i = 0; i < car.getDistance(); i++) {
             System.out.print("-");
         }
         System.out.println();
     }
+
+    public static void winnerPrint(final List<String> winners) {
+        for (String winner : winners) {
+            System.out.print(winner+", ");
+        }
+        System.out.println("가 최종 우승했습니다.");
+    }
+
 }
